@@ -31,7 +31,7 @@ The analysis processes several .parquet files:
 * Implemented a custom weighted scoring system to evaluate team performance beyond standard goals.
 * **High/Mid-Impact Positives:** Awarded positive weights for goals, shots on target, accurate progression passes, and successful duels.
 * **High/Low-Impact Negatives:** Applied penalty weights for red cards, yellow cards, and stopped progress.
-* Aggregated these weighted actions to generate an `overall_play_rating` for each formation.
+* Aggregated these weighted actions to generate an overall_play_rating for each formation.
 
 ### 4. Filtering and Visualization
 * Filtered out statistically insignificant data by applying a sample-size threshold (e.g., formations used in at least 30 matches).
