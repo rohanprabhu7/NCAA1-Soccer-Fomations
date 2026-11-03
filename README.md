@@ -11,11 +11,11 @@ This project analyzes multi-season NCAA soccer match datasets to evaluate team t
 * **Google Colab:** Used as the primary compute environment, leveraging Google Drive mounting for large dataset storage.
 
 ## Datasets
-The analysis processes several `.parquet` files:
-* `all_events.parquet`: Contains high-granularity play-by-play actions (passes, shots, duels, infractions).
-* `matches.parquet`: Contains match-level metadata (teams, scores, dates).
-* `leagues.parquet`: Contains division and competition details.
-* `formations.parquet`: Contains team tactical setups and structures.
+The analysis processes several .parquet files:
+* all_events.parquet: Contains high-granularity play-by-play actions (passes, shots, duels, infractions).
+* matches.parquet: Contains match-level metadata (teams, scores, dates).
+* leagues.parquet: Contains division and competition details.
+* formations.parquet: Contains team tactical setups and structures.
 
 ## Key Features & Methodology
 
@@ -24,8 +24,8 @@ The analysis processes several `.parquet` files:
 * Merged event data with match and formation data using corresponding match and team IDs.
 
 ### 2. Tactical & Performance Metrics
-* **Win Rate Analysis:** Grouped data by `team_formation` to calculate total games played, total wins, and overall win rates for each tactical setup.
-* **Expected Goals (xG):** Aggregated `shot_xg` and actual goals (`shot_isGoal`) within specific time windows to account for mid-game formation switches. 
+* **Win Rate Analysis:** Grouped data by team_formation to calculate total games played, total wins, and overall win rates for each tactical setup.
+* **Expected Goals (xG):** Aggregated `shot_xg` and actual goals (shot_isGoal) within specific time windows to account for mid-game formation switches. 
 
 ### 3. Custom Play Sentiment Analysis
 * Implemented a custom weighted scoring system to evaluate team performance beyond standard goals.
